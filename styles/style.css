@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #212529;
+  --button-color: #ffffff;
+  --opacity-color: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  --default-font-family: "DM Sans", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  color: var(--primary-color);
+  /* font-family: "Oswald", sans-serif; */
+}
+
+header {
+  margin: 0 auto;
+  padding: 190px 0 100px 0;
+  background-image: var(--opacity-color), url("/images/welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 200px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.button-header {
+  padding: 10px 15px;
+  font-weight: 500;
+  background-color: var(--button-color);
+  margin-top: 50px;
+}
+
+.button-header:hover {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 100px 0 50px 0;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  .button-header {
+  margin-top: 10px;
+}
+}
