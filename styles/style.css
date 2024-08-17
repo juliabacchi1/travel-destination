@@ -1,45 +1,48 @@
 :root {
   --primary-color: #212529;
-  --button-color: #ffffff;
-  --opacity-color: linear-gradient(
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.5)
-  );
-  --default-font-family: "DM Sans", sans-serif;
+  --second-color: #ffffff;
+  --gradient-color: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
   color: var(--primary-color);
-  /* font-family: "Oswald", sans-serif; */
 }
 
 header {
   margin: 0 auto;
-  padding: 190px 0 100px 0;
-  background-image: var(--opacity-color), url("/images/welcome.jpg");
+  padding: 190px 0;
+  background-image: var(--gradient-color), url("/images/welcome.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: var(--second-color);
 }
 
-h1 {
-  font-size: 200px;
+header h1 {
+  font-size: 95px;
+  font-weight: 700;
   margin-bottom: 0;
 }
 
-h2 {
+header h3 {
+  font-weight: 900;
   font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 5px;
 }
 
-h3 {
-  font-size: 35px;
+header h2 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
 }
 
 .button-header {
   padding: 10px 15px;
   font-weight: 500;
-  background-color: var(--button-color);
+  background-color: var(--second-color);
   margin-top: 50px;
 }
 
@@ -48,16 +51,21 @@ h3 {
   color: var(--button-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   header {
-    padding: 100px 0 50px 0;
+    padding: 100px 0;
   }
 
-  h1 {
-    font-size: 100px;
+  header h1 {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  header h3 {
+    font-size: 20px;
   }
 
   .button-header {
-  margin-top: 10px;
-}
+    margin-top: 20px;
+  }
 }
