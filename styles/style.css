@@ -1,7 +1,14 @@
 :root {
   --primary-color: #212529;
   --second-color: #ffffff;
-  --gradient-color: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  --gradient-color-head: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+  --gradient-color-footer: linear-gradient(
+    rgba(39, 32, 68, 0.7),
+    rgba(39, 32, 68, 0.7)
+  );
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -13,7 +20,7 @@ body {
 header {
   margin: 0 auto;
   padding: 200px 0;
-  background-image: var(--gradient-color), url("/images/welcome.png");
+  background-image: var(--gradient-color-head), url("/images/welcome.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,7 +41,7 @@ header h3 {
 }
 
 header h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 30px;
   line-height: 3;
 }
@@ -54,7 +61,49 @@ header a {
   background: var(--second-color);
 }
 
-@media (max-width: 800px) {
+footer {
+  margin: 0 auto;
+  padding: 60px;
+  background-image: var(--gradient-color-footer), url("/images/footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--second-color);
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li,
+h3,
+p {
+  line-height: 30px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer p {
+  opacity: 0.7;
+}
+
+footer a {
+  color: var(--second-color);
+  opacity: 0.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 960px) {
   header {
     padding: 100px 0;
   }
