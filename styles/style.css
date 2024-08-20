@@ -3,8 +3,8 @@
   --second-color: #ffffff;
   --terciary-color: #f8f8f8;
   --gradient-color-head: linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4)
   );
   --gradient-color-footer: linear-gradient(
     rgba(39, 32, 68, 0.7),
@@ -48,17 +48,23 @@ header h2 {
 }
 
 header a {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   margin-top: 20px;
-  color: var(--primary-color);
   padding: 15px 20px;
   display: inline-block;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--second-color);
+  background: none;
+  border: 1px solid var(--second-color);
+}
+
+header a:hover {
+  color: var(--primary-color);
   background: var(--second-color);
 }
 
@@ -74,7 +80,8 @@ main h3 {
   line-height: 3;
   font-size: 24px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 40px;
+  padding-bottom: 10px;
 }
 
 main h4 {
@@ -97,7 +104,9 @@ section.container {
   margin: 0 auto;
 }
 
-.main-first, .main-second {
+.main-first,
+.main-second,
+.main-third {
   padding: 50px 100px;
 }
 
@@ -122,10 +131,6 @@ section.container {
   letter-spacing: 0;
   font-size: 13px;
 }
-
-/* .card-header {
-  padding: 0;
-} */
 
 .card-header.grid {
   grid-gap: 0;
@@ -261,9 +266,9 @@ footer a {
     display: none;
   }
 
-.embed {
-  aspect-ratio: 16/9;;
-}
+  .embed {
+    aspect-ratio: 16/9;
+  }
 
   footer {
     padding: 15px;
