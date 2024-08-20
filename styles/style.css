@@ -1,6 +1,7 @@
 :root {
   --primary-color: #212529;
   --second-color: #ffffff;
+  --terciary-color: #f8f8f8;
   --gradient-color-head: linear-gradient(
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)
@@ -62,9 +63,12 @@ header a {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 80px;
+}
+
+.main-first, .main-second {
+  padding: 50px 100px;
 }
 
 main h3 {
@@ -72,10 +76,9 @@ main h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: 3;
-  text-align: center;
   font-size: 24px;
-  margin: 0;
-  padding-bottom: 50px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 main h4 {
@@ -90,6 +93,43 @@ main h4 {
 main p {
   letter-spacing: 0.5px;
   font-size: 15px;
+}
+
+section.container {
+  background-color: var(--terciary-color);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px 30px 10px;
+}
+
+.card-body h4 {
+  line-height: 1;
+}
+
+.card-footer {
+  padding: 5px;
+}
+
+.btn {
+  display: block;
+  color: var(--second-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 
 .img-responsive {
