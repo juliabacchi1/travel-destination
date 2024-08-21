@@ -20,7 +20,7 @@ body {
 
 header {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 230px 0;
   background-image: var(--gradient-color-head), url("/images/welcome.png");
   background-size: cover;
   background-position: center;
@@ -104,10 +104,13 @@ section.container {
   margin: 0 auto;
 }
 
-.main-first,
+.main-first {
+  padding: 50px 100px 80px 100px;
+}
+
 .main-second,
 .main-third {
-  padding: 50px 100px;
+  padding: 30px 100px 70px 100px;
 }
 
 .card {
@@ -134,14 +137,16 @@ section.container {
 
 .card-header.grid {
   grid-gap: 0;
+  background-color: var(--second-color);
 }
 
 .embed {
   width: 100%;
-  aspect-ratio: 1 /1;
+  aspect-ratio: 4 /3;
 }
 
 .card-footer {
+  background-color: var(--second-color);
   padding: 5px;
 }
 
