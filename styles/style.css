@@ -3,8 +3,8 @@
   --second-color: #ffffff;
   --terciary-color: #f8f8f8;
   --gradient-color-head: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.4)
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
   );
   --gradient-color-footer: linear-gradient(
     rgba(39, 32, 68, 0.7),
@@ -22,6 +22,7 @@ header {
   margin: 0 auto;
   padding: 230px 0;
   background-image: var(--gradient-color-head), url("/images/welcome.png");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,6 +105,15 @@ section.container {
   margin: 0 auto;
 }
 
+section.static {
+  margin: 0 auto;
+  padding: 150px 0;
+  background-image: url("/images/main.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .main-first {
   padding: 50px 100px 80px 100px;
 }
@@ -166,6 +176,18 @@ section.container {
 
 .img-responsive {
   max-width: 100%;
+}
+
+.static h2 {
+  color: var(--second-color);
+  font-size: 86px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.form-mail {
+  margin: 0 auto;
+  display: flex;
 }
 
 .grid {
