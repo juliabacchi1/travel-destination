@@ -2,7 +2,7 @@
   --primary-color: #212529;
   --second-color: #ffffff;
   --terciary-color: #f8f8f8;
-  --button-color: #4732B3;
+  --button-color: #4732b3;
   --gradient-color-head: linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)
@@ -114,17 +114,46 @@ section.static {
   background-attachment: fixed;
 }
 
-.introduction {
-  padding: 50px 100px 80px 100px;
+.introduction,
+.culinary-grid,
+.itinerary-grid {
+  padding: 70px 100px;
 }
 
-.main-second,
-.main-third {
-  padding: 30px 100px 70px 100px;
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  width: 100%;
+  animation: slide-left 50s infinite linear;
+}
+
+.carousel-images img {
+  max-width: 30%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card,
+.card-header.grid,
+.card-footer {
+  background-color: var(--second-color);
 }
 
 .card {
-  background-color: var(--second-color);
   margin: 10px 0;
 }
 
@@ -132,23 +161,13 @@ section.static {
   padding: 30px 30px 10px;
 }
 
-.card-body h4 {
-  line-height: 1;
-}
-
 .card-header.grid {
   grid-gap: 0;
-  background-color: var(--second-color);
 }
 
 .embed {
   width: 100%;
   aspect-ratio: 4 /3;
-}
-
-.card-footer {
-  background-color: var(--second-color);
-  padding: 5px;
 }
 
 .btn {
