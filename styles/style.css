@@ -255,6 +255,10 @@ footer a {
     padding: 100px 0;
   }
 
+  .introduction, .culinary-grid, .itinerary-grid, footer {
+    padding: 30px;
+  }
+
   header h1 {
     font-size: 40px;
     padding: 10px;
@@ -266,10 +270,6 @@ footer a {
 
   header h2 {
     font-size: 16px;
-  }
-
-  main {
-    padding: 20px;
   }
 
   main h3 {
@@ -290,6 +290,14 @@ footer a {
     font-size: 12px;
   }
 
+  section.static {
+  padding: 60px 0;
+  }
+
+  .static h2 {
+    font-size: 30px;
+  }
+
   .grid {
     grid-gap: 10px;
   }
@@ -305,10 +313,6 @@ footer a {
 
   .embed {
     aspect-ratio: 16/9;
-  }
-
-  footer {
-    padding: 15px;
   }
 
   footer p,
