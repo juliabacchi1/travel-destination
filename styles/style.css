@@ -2,6 +2,7 @@
   --primary-color: #212529;
   --second-color: #ffffff;
   --terciary-color: #f8f8f8;
+  --button-color: #4732B3;
   --gradient-color-head: linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)
@@ -51,9 +52,6 @@ header h2 {
 header a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 20px;
   padding: 15px 20px;
   display: inline-block;
   letter-spacing: 2px;
@@ -62,11 +60,13 @@ header a {
   color: var(--second-color);
   background: none;
   border: 1px solid var(--second-color);
+  border-radius: 5px;
 }
 
 header a:hover {
-  color: var(--primary-color);
-  background: var(--second-color);
+  color: var(--second-color);
+  background: var(--button-color);
+  border: 1px solid var(--button-color);
 }
 
 main {
@@ -99,7 +99,7 @@ main p {
   font-size: 15px;
 }
 
-section.container {
+section.culinary {
   background-color: var(--terciary-color);
   max-width: 100%;
   margin: 0 auto;
@@ -114,7 +114,7 @@ section.static {
   background-attachment: fixed;
 }
 
-.main-first {
+.introduction {
   padding: 50px 100px 80px 100px;
 }
 
@@ -134,15 +134,6 @@ section.static {
 
 .card-body h4 {
   line-height: 1;
-}
-
-.container h3 {
-  padding: 20px;
-}
-
-.container p {
-  letter-spacing: 0;
-  font-size: 13px;
 }
 
 .card-header.grid {
